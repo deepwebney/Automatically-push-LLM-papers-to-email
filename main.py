@@ -20,5 +20,5 @@ if __name__ == '__main__':
         paper = mange.abs2trans(paper)
     text = mange.generate_text(paper)
     html = mange.generate_html(paper)
-    send_email(['892904582@qq.com', 'zhangxiao_202003@163.com', 'sunmengxin98@163.com'], '宣朴论文早知道', text, html)
+    send_email([emil list], 'test', text, html)
     
