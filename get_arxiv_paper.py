@@ -10,12 +10,12 @@ import base64
 
 
 class ManagementPaper:
-    def __init__(self, number=50, root_path='/data/zhangxiao/luoxuanpu/', push_num=5, trans=False) -> None:
+    def __init__(self, number=50, root_path='your_path', push_num=5, trans=False) -> None:
         self.per_get_max_paper_num = number
         self.root_path = root_path
         self.push_num = push_num
-        self.appid = '20240317001995807'
-        self.appkey = 'Exdhqp4PPQgQqdep3RdS'
+        self.appid = 'your_id'
+        self.appkey = 'your_key'
         self.trans = trans
         self.afterabstract = ''
         
@@ -133,7 +133,7 @@ class ManagementPaper:
                 art_list.append(template)
             div = div + '\n'.join(art_list) + '\n</div>' 
             div_lst.append(div)
-        with open('/data/zhangxiao/luoxuanpu/ads.jpg', "rb") as image_file:
+        with open('/data/ads.jpg', "rb") as image_file:
             img = base64.b64encode(image_file.read()).decode('utf-8')
         html = """\
             <html lang="en">
