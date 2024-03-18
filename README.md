@@ -32,7 +32,7 @@
 
 3. ```
    crontab -e
-   0 9 * * * /bin/bash python3 main.py
+   0 9 * * * python3 main.py
    ```
 
    
